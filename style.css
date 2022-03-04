@@ -1,60 +1,84 @@
-@font-face {
-    font-family: oswald;
-    src: url("/font/Oswald-Light.ttf");
-  }
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    color: black;
-    text-align: center;
-    font-family: oswald;
-  }
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+body {
+  color: black;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   
-  nav ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
-    background-color: rgb(39, 38, 38);
-    color: white;
-    height: 2rem;
-    font-size: 1rem;
-    padding: 0.4rem;
-    border: 0.1rem solid darkgrey;
-  }
-  
-  li:not(:first-child) {
-    text-align: center;
-    padding-left: 0.5rem;
-  }
-  
-  .li1 {
-    font-size: 20px;
-  }
-  
-  article {
-    height: 100%;
-    flex-grow: 1;
-    background-color: lightgrey;
-    margin: 0.5rem;
-  }
-  
-  .flex {
-    display: flex;
-    height: 30vh;
-    min-height: 300px;
-  }
-  
-  .carousel {
-    height: 30vh;
-    min-height: 300px;
-    background-color: lightgrey;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  background-color: rgb(39, 38, 38);
+  color: white;
+  font-size: 1rem;
+  border: 1px solid darkgrey;
+}
+li {
+  border-left: 1px solid darkgrey
+}
+
+li:not(:first-child) {
+  text-align: center;
+  padding-left: 0.5rem;
+}
+
+li:nth-child(2) {
+  background-color: lightgrey;
+}
+li:first-child {
+  font-size: 1.2rem;
+}
+
+article {
+  height: 100%;
+  flex-grow: 1;
+  background-color: lightgrey;
+  margin: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  height: 30vh;
+  min-height: 300px;
+  margin-bottom: 5rem;
+}
+
+.carousel {
+  height: 30vh;
+  min-height: 300px;
+  background-color: lightgrey;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  border-top: 2px solid black
+}
+
+form h2 {
+  text-align: left;
+  padding: 2rem;
+}
+section h2 {
+  padding: 3rem;
+}
+
+form div input {
+  width: 800px;
+  margin: 0.5rem auto;
+}
+
+form div textarea {
+  width: 800px;
+  margin: 0.5rem auto;
+}
