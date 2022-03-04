@@ -1,0 +1,60 @@
+@font-face {
+    font-family: oswald;
+    src: url("/font/Oswald-Light.ttf");
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    color: black;
+    text-align: center;
+    font-family: oswald;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0.4rem;
+    border: 0.1rem solid darkgrey;
+  }
+  
+  li:not(:first-child) {
+    text-align: center;
+    padding-left: 0.5rem;
+  }
+  
+  .li1 {
+    font-size: 20px;
+  }
+  
+  article {
+    height: 100%;
+    flex-grow: 1;
+    background-color: lightgrey;
+    margin: 0.5rem;
+  }
+  
+  .flex {
+    display: flex;
+    height: 30vh;
+    min-height: 300px;
+  }
+  
+  .carousel {
+    height: 30vh;
+    min-height: 300px;
+    background-color: lightgrey;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
